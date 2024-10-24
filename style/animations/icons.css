@@ -1,0 +1,116 @@
+.iconHolder
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.iconHolder img
+{
+    position: absolute;
+}
+
+#lens
+{
+    transform: scale(0.75);
+    z-index: 3;
+}
+
+#music
+{
+    position: relative;
+    transform: scale(.1);
+    scale: 0.25;
+    top: -20%;
+    left: -20%;
+    z-index: 2;
+}
+
+#drop
+{
+    background-color: #9353FF;
+    border-radius: 60% 0% 70% 60%;
+    position: relative;
+    rotate: -45deg;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: -250px;
+    left: -30px;
+}
+
+#back-lens
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* height: 12px */
+    height: 12px;
+    width: 240px;
+    top: -65px;
+    left: -65px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+#border
+{
+    position: absolute;
+    z-index: 1;
+    width: 240px;
+    height: 240px;
+    /* top: 50px; */
+    /* left: -25px; */
+    background-color: #9353FF;
+    border-radius: 50%;
+}
+
+#inner-lens
+{
+    position: absolute;
+    z-index: 1;
+    width: 195px;
+    height: 195px;
+    background-color: white;
+    border-radius: 50%;
+    top: 20px;
+}
+
+#circle
+{
+    position: fixed;
+    z-index: -1;
+    background-color: #F5F2B8;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+#text-display
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+    background-color: #9353FF;
+}
+
+.char
+{
+    font-size: 100px;
+    text-decoration: 10 10 #4E6EFD;
+    color: #9353FF;
+    font-weight: 900;
+}

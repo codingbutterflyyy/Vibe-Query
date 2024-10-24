@@ -1,0 +1,187 @@
+@keyframes lensZoom
+{
+    0%
+    {
+        scale: 0.5;
+        transform: rotate(40deg);
+        transform-origin: top right;
+    }
+    100%
+    {
+        scale: 1;
+        transform: rotate(0deg);
+        transform-origin: top right;
+    }
+}
+
+@keyframes noteZoomIn
+{
+    0%
+    {
+        scale: 0.25;
+        transform: scale(0.1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes dropFalling
+{
+    0%
+    {
+        top: -250px;
+    }
+    10%
+    {
+        top: -249px;
+    }
+    20%
+    {
+        top: -247px;
+    }
+    30%
+    {
+        top: -243px;
+    }
+    40%
+    {
+        top: -238px;
+    }
+    50%
+    {
+        top: -231px;
+    }
+    60%
+    {
+        top: -223px;
+    }
+    70%
+    {
+        top: -213px;
+    }
+    80%
+    {
+        top: -202px;
+    }
+    90%
+    {
+        top: -189px;
+    }
+    100%
+    {
+        top: -175px;
+        border-radius: 100%;
+        transition: 0.5s ease-in;
+    }
+}
+
+@keyframes dropFill
+{
+    0%
+    {
+        height: 12px;
+    }
+    100%
+    {
+        height: 240px;
+    }
+}
+
+@keyframes circleLoop
+{
+    0%
+    {
+        scale: 0.95;
+    }
+    50%
+    {
+        scale: 1.25;
+    }
+    100%
+    {
+        scale: 0.95;
+    }
+}
+
+@keyframes circleOut 
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(4.5);
+    }
+}
+
+@keyframes lensOut
+{
+    0%
+    {
+        transform: rotate(0deg);
+        scale: 1;
+        transform-origin: bottom right;
+    }
+    100%
+    {
+        transform: rotate(-80deg);
+        transform-origin: bottom right;
+    }
+}
+
+@keyframes lensBack
+{
+    0%
+    {
+        transform: rotate(-80deg);
+        transform-origin: bottom right;
+    }
+    100%
+    {
+        transform: rotate(30deg);
+        transform-origin: bottom right;
+    }
+}
+
+.lensZoom
+{
+    animation: lensZoom 2s forwards;
+}
+
+.noteZoomIn
+{
+    animation: noteZoomIn 1s forwards;
+}
+
+.dropFalling
+{
+    animation: dropFalling 0.5s forwards;
+}
+
+.fill
+{
+    animation: dropFill 0.5s forwards;
+}
+
+.circleLoop
+{
+    animation: circleLoop 2s infinite;
+}
+
+.circleOut
+{
+    animation: circleOut 1s forwards;
+}
+
+.lensOut
+{
+    animation: lensOut .75s forwards;
+}
+
+.lensBack
+{
+    animation: lensBack 1.5s forwards;
+}
